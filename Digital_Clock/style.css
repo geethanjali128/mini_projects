@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: burlywood;
+}
+
+h3{
+    text-align: center;
+    font-size: 50px;
+    color:brown ;
+    text-shadow: 2px 2px 2px lightcoral;
+    
+}
+img{
+    border-radius: 50%;
+    width: 50px;
+    z-index: 4;
+    position: absolute;
+}
+.clock{
+    position: relative;
+    display: flex;
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    border-radius: 50%;
+    margin: 80px auto;
+    border: 5px solid darkgrey;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0,0,.7);
+    z-index: 5;
+}
+
+.numbers{
+   
+    font-size: 30px;
+    font-weight: bold;
+    color: cornsilk;
+   text-shadow: 1px 1px 2px rgba(0, 0,0,.5);
+}
+.twelve{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translatex(-50%);
+   }
+
+.three{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.six{
+    position: absolute;
+   bottom: 10px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.nine {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrows div{
+    background-color: cornsilk;
+    height: 120px;
+    width: 10px;
+    position: absolute;
+    transform-origin: bottom center;
+    bottom: 50%;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0,0,.3);
+    z-index: 3;
+}
+
+.arrows .hour{
+    height:100px ;
+    transform: rotate(30deg);
+}
+
+.arrows .second {
+    background-color: burlywood;
+    transform: rotate(250deg);
+}
